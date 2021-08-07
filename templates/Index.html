@@ -9,9 +9,9 @@
 
 <body>
 
-    <div style="color:red">
+    <div style="color:white">
         <form action="{{ url_for('predict')}}" method="post">
-            <h2>Know the Predicted price of the car</h2>
+            <h2 >Know the Predicted price of the car</h2>
             <h3>Year</h3>
             <input id="first" name="Year" type="number ">
             <h3>What is the Showroom Price?(In lakhs)</h3><br><input id="second" name="Present_Price" required="required">
@@ -47,12 +47,29 @@
 
 
     <style>
+
+        h2{
+            margin-top:0px;
+            margin-left:0px;
+            height:6%;
+            color:red;
+            border-bottom:2px solid black;
+            background-color:#26033d;
+            position:fixed;
+            width:100%;
+            top:0px;
+        }
         body {
             background-color: black;
             text-align: center;
             padding: 0px;
+            background-image:url('blackcar.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
-        
+
         #research {
             font-size: 18px;
             width: 100px;
